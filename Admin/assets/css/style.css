@@ -550,9 +550,9 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   
 }
-@media (max-width: 1199px) {
+@media (max-width: 750px) {
   .sidebar {
-    left: -300px;
+    left: -1000px;
   }
 }
 .sidebar::-webkit-scrollbar {
@@ -626,6 +626,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link.collapsed i {
   color: #4D954E;
 }
+
 .sidebar-nav .nav-link:hover {
   color: #284d29;
   background: #dfe9e9b0;
@@ -634,6 +635,9 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link:hover i {
   color: #284d29;
 }
+
+
+
 .sidebar-nav .nav-link .bi-chevron-down {
   margin-right: 0;
   transition: transform 0.2s ease-in-out;
@@ -665,6 +669,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-content a:hover, .sidebar-nav .nav-content a.active {
   color: #B5E298;
 }
+
 .sidebar-nav .nav-content a.active i {
   background-color: #4D954E;
 }

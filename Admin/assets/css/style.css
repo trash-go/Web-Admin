@@ -628,12 +628,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #284d29;
+  color: #000000;
   background: #dfe9e9b0;
   
 }
 .sidebar-nav .nav-link:hover i {
-  color: #284d29;
+  color: #000000;
 }
 
 
@@ -655,7 +655,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #4D954E;
+  color: #000000;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -667,7 +667,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .sidebar-nav .nav-content a:hover, .sidebar-nav .nav-content a.active {
-  color: #B5E298;
+  color: #a7e081;
 }
 
 .sidebar-nav .nav-content a.active i {

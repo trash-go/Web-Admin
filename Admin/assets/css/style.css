@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #B5E298;
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -298,21 +298,21 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb {
   font-size: 14px;
   font-family: "Nunito", sans-serif;
-  color: #4D954E;
+  color: #284f29;
   font-weight: 600;
 }
 .breadcrumb a {
-  color: #4D954E;
+  color: #284f29;
   transition: 0.3s;
 }
 .breadcrumb a:hover {
-  color: #4D954E;
+  color: #284f29;
 }
 .breadcrumb .breadcrumb-item::before {
-  color: #4D954E;
+  color: #284f29;
 }
 .breadcrumb .active {
-  color: #4D954E;
+  color: #284f29;
   font-weight: 600;
 }
 
@@ -599,7 +599,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-heading {
   font-size: 11px;
   text-transform: uppercase;
-  color: #4D954E;
+  color: #000000;
   font-weight: 600;
   margin: 10px 0 5px 15px;
 }
@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4D954E;
+  color: #000000;
   transition: 0.3;
   background: #f6f9ff;
   padding: 10px 15px;
@@ -617,14 +617,14 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #4D954E;
+  color: #000000;
 }
 .sidebar-nav .nav-link.collapsed {
-  color: #4D954E;
+  color: #000000;
   background: #fff;
 }
 .sidebar-nav .nav-link.collapsed i {
-  color: #4D954E;
+  color: #000000;
 }
 
 .sidebar-nav .nav-link:hover {

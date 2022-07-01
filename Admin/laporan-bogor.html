@@ -384,146 +384,169 @@
 
 
 
-<main id="main" class="main">
+  <main id="main" class="main">
+    <style>
+      button,input[type=submit],input[type=reset] {
+          font-family: sans-serif;
+          font-size: 15px;
+          background: #4d954e;
+          color: white;
+          border: white 1px solid;
+          border-radius: 5px;
+          padding: 6px 20px;
+          margin-top: 10px;
+      }
+      a {
+          text-decoration: none;
+      }
+      a:hover, button:hover, input[type=submit]:hover, input[type=reset]:hover{
+          opacity:0.9;
+      }
+    </style>
+    <button onclick="goBack()">Kembali</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script><p></p>
+      <div class="pagetitle">
+        <h1>Laporan Komplek Area Bogor</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Laporan</li>
+            <li class="breadcrumb-item active">Bogor</li>
+          </ol>
+        </nav>
+      </div><!-- End Page Title -->
 
-    <div class="pagetitle">
-      <h1>Laporan Komplek Area Bogor</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Laporan</li>
-          <li class="breadcrumb-item active">Bogor</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-6">
+              
+              <!-- Recent Sales -->
+              <div class="col-12">
+                <div class="cardkomplek recent-sales overflow-auto">
 
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-6">
-            
-            <!-- Recent Sales -->
-            <div class="col-12">
-              <div class="card recent-sales overflow-auto">
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                      <li class="dropdown-header text-start">
+                        <h6>Filter</h6>
+                      </li>
 
-                <div class="filter">
-                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <li class="dropdown-header text-start">
-                      <h6>Filter</h6>
-                    </li>
+                      <li><a class="dropdown-item" href="#">Today</a></li>
+                      <li><a class="dropdown-item" href="#">This Month</a></li>
+                      <li><a class="dropdown-item" href="#">This Year</a></li>
+                    </ul>
+                  </div>
 
-                    <li><a class="dropdown-item" href="#">Today</a></li>
-                    <li><a class="dropdown-item" href="#">This Month</a></li>
-                    <li><a class="dropdown-item" href="#">This Year</a></li>
-                  </ul>
+                  <div class="card-body">
+                    <h5 class="card-title">Laporan <span>| Hari Ini</span></h5>
+
+                    <table class="table table-bordered datatable">
+                      <thead>
+                        <tr>
+                          <th scope="col">id</th>
+                          <th scope="col">Komplek</th>
+                          <th scope="col">Alamat</th>
+                          <th scope="col">Jumlah Rumah</th>
+                          <th scope="col">Jumlah Laporan</th>
+                          <th scope="col">Presentase</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">User</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"><a href="#">#2457</a></th>
+                          <td>Mutiara Indah 2</td>
+                          <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe No. 67, Kec. Pondok Cabe</a></td>
+                          <td>300</td>
+                          <td>261</td>
+                          <td>71%</td>
+                          <td><span class="badge bg-success">Disetujui</span></td>
+                          <td>Rincian</td>
+                        </tr>
+                        <tr>
+                          
+                          <th scope="row"><a href="#">#2457</a></th>
+                          <td>Mutiara Indah 3</td>
+                          <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe II No. 98, Kec. Pondok Cabe</a></td>
+                          <td>256</td>
+                          <td>198</td>
+                          <td>75%</td>
+                          <td><span class="badge bg-warning">Belum Disetujui</span></td>
+                          <td>Rincian</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2457</a></th>
+                          <td>Casamala Residence </td>
+                          <td><a href="#" class="text-primary">Jl. Raya Grogol No. 6, Kec. Grogol</a></td>
+                          <td>452</td>
+                          <td>171</td>
+                          <td>11%</td>
+                          <td><span class="badge bg-danger">Belum Memenuhi</span></td>
+                          <td>Rincian</td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2644</a></th>
+                          <td>Angus Grady</td>
+                          <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
+                          <td>$67</td>
+                          <td><span class="badge bg-danger">Rejected</span></td>
+                        </tr>
+                        <tr>
+                          <th scope="row"><a href="#">#2644</a></th>
+                          <td>Raheem Lehner</td>
+                          <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
+                          <td>$165</td>
+                          <td><span class="badge bg-success">Approved</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                  </div>
+
                 </div>
+              </div><!-- End Recent Sales -->
 
-                <div class="card-body">
-                  <h5 class="card-title">Laporan <span>| Hari Ini</span></h5>
+            <div class="card">
+              <div class="card-body">
 
-                  <table class="table table-bordered datatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Komplek</th>
-                        <th scope="col">Alamat</th>
-                        <th scope="col">Jumlah Rumah</th>
-                        <th scope="col">Jumlah Laporan</th>
-                        <th scope="col">Presentase</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">User</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Mutiara Indah 2</td>
-                        <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe No. 67, Kec. Pondok Cabe</a></td>
-                        <td>300</td>
-                        <td>261</td>
-                        <td>71%</td>
-                        <td><span class="badge bg-success">Disetujui</span></td>
-                        <td>Rincian</td>
-                      </tr>
-                      <tr>
-                        
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Mutiara Indah 3</td>
-                        <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe II No. 98, Kec. Pondok Cabe</a></td>
-                        <td>256</td>
-                        <td>198</td>
-                        <td>75%</td>
-                        <td><span class="badge bg-warning">Belum Disetujui</span></td>
-                        <td>Rincian</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2457</a></th>
-                        <td>Casamala Residence </td>
-                        <td><a href="#" class="text-primary">Jl. Raya Grogol No. 6, Kec. Grogol</a></td>
-                        <td>452</td>
-                        <td>171</td>
-                        <td>11%</td>
-                        <td><span class="badge bg-danger">Belum Memenuhi</span></td>
-                        <td>Rincian</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Angus Grady</td>
-                        <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                        <td>$67</td>
-                        <td><span class="badge bg-danger">Rejected</span></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><a href="#">#2644</a></th>
-                        <td>Raheem Lehner</td>
-                        <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                        <td>$165</td>
-                        <td><span class="badge bg-success">Approved</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <h5 class="card-title">Default</h5>
+      </section>
 
-                </div>
+    </main><!-- End #main -->
 
-              </div>
-            </div><!-- End Recent Sales -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Trash Go Tech Indonesia</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Hustler Team Trash Go</a>
+      </div>
+    </footer><!-- End Footer -->
 
-          <div class="card">
-            <div class="card-body">
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-              <h5 class="card-title">Default</h5>
-    </section>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.min.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Trash Go Tech Indonesia</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
-      Designed by <a href="https://bootstrapmade.com/">Hustler Team Trash Go</a>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.min.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 
   </body>

@@ -214,8 +214,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Card */
 .card {
+  margin-bottom: 50px;
+  width: 40rem;
+  border: 2px;
+  border-radius: 5px;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.cardkomplek {
   margin-bottom: 100px;
-  width: 50rem;
+  width: 80rem;
   border: 2px;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
@@ -645,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link:not(.collapsed) .bi-chevron-down {
   transform: rotate(180deg);
 }
-.sidebar-nav .nav-content {
+.sidebar-nav .nav-content { 
   padding: 5px 0 0 0;
   margin: 0;
   list-style: none;

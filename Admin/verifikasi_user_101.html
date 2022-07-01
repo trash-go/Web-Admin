@@ -269,17 +269,19 @@
 
   </header><!-- End Header -->
 
- <!-- ======= Sidebar ======= -->
- <aside id="sidebar" class="sidebar">
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
 
   <ul class="sidebar-nav" id="sidebar-nav">
 
     <li class="nav-item">
-      <a class="nav-link collapsed"  href="index.html">
+      <a class="nav-link collapsed" href="index.html">
         <i class="bi bi-grid"></i>
         <span>Dashboard</span>
       </a>
     </li><!-- End Dashboard Nav -->
+
+
 
     <li class="nav-item">
       <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
@@ -287,7 +289,7 @@
       </a>
       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li>
-         <a href="komplek-jakarta.html"> 
+         <a href="komplek-jakarta.html" class="active"> 
             <i class="bi bi-circle"></i><span>Jakarta</span>
           </a>
         </li>
@@ -297,7 +299,7 @@
           </a>
           </li>
         <li>
-          <a href="komplek-depok.html"> 
+          <a href="komplek-bekasi.html"> 
             <i class="bi bi-circle"></i><span>Depok</span>
           </a>              
           </li>
@@ -315,48 +317,21 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link collapsed" data-bs-target="#components2-nav" data-bs-toggle="collapse" href="#">
-        <i class="bi bi-menu-button-wide"></i><span>Laporan</span><i class="bi bi-chevron-down ms-auto"></i>
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-grid"></i>
+        <span>Laporan</span>
       </a>
-      <ul id="components2-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-        <li>
-         <a href="laporan-jakarta.html" class="active" > 
-            <i class="bi bi-circle"></i><span>Jakarta</span>
-          </a>
-        </li>
-        <li>
-          <a href="laporan-bogor.html"> 
-            <i class="bi bi-circle"></i><span>Bogor</span>
-          </a>
-          </li>
-        <li>
-          <a href="laporan-depok.html"> 
-            <i class="bi bi-circle"></i><span>Depok</span>
-          </a>              
-          </li>
-        <li>
-          <a href="laporan-tangerang.html"> 
-            <i class="bi bi-circle"></i><span>Tangerang</span>
-          </a>
-          </li>
-        <li>
-          <a href="laporan-bekasi.html"> 
-            <i class="bi bi-circle"></i><span>Bekasi</span>
-          </a>
-          </li>
-      </ul>
     </li>
 
-
     <li class="nav-item">
-      <a class="nav-link collapsed" href="jadwal.html">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
         <i class="bi bi-grid"></i>
         <span>Jadwal Pengangkutan</span>
       </a>
     </li>
 
     <li class="nav-item">
-      <a class="nav-link collapsed" href="transaksi.html">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
         <i class="bi bi-grid"></i>
         <span>Transaksi</span>
       </a>
@@ -370,119 +345,124 @@
     </li><!-- End Login Page Nav -->
 </aside><!-- End Sidebar-->
 
-<main id="main" class="main">
 
-  <div class="pagetitle">
-    <h1>Data Laporan Komplek Area Depok</h1>
-    <nav>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Data Klien</li>
-        <li class="breadcrumb-item active">Jakarta</li>
-      </ol>
-    </nav>
-  </div><!-- End Page Title -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-blank.html">
+          <i class="bi bi-file-earmark"></i>
+          <span>Blank</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
 
-<section class="section">
-  <div class="row">
-    <div class="col-lg-6">
-        
-        <!-- Recent Sales -->
-        <div class="col-12">
-          <div class="card recent-sales overflow-auto">
+    </ul>
 
-            <div class="filter">
-              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
-              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <li class="dropdown-header text-start">
-                  <h6>Filter</h6>
-                </li>
+  </aside><!-- End Sidebar-->
 
-                <li><a class="dropdown-item" href="#">Today</a></li>
-                <li><a class="dropdown-item" href="#">This Month</a></li>
-                <li><a class="dropdown-item" href="#">This Year</a></li>
-              </ul>
-            </div>
+  <main id="main" class="main">
 
-            <div class="card-body">
-              <h5 class="card-title">Laporan <span>| Hari Ini</span></h5>
+    <div class="pagetitle">
+      <h1>Laporan Komplek Area Jakarta</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Laporan</li>
+          <li class="breadcrumb-item active">Jakarta</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
 
-              <table class="table table-bordered datatable">
-                <thead>
-                  <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">Komplek</th>
-                    <th scope="col">Alamat</th>
-                    <th scope="col">Jumlah Rumah</th>
-                    <th scope="col">Jumlah Laporan</th>
-                    <th scope="col">Presentase</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">User</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row"><a href="#">#2457</a></th>
-                    <td>Mutiara Indah 2</td>
-                    <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe No. 67, Kec. Pondok Cabe</a></td>
-                    <td>300</td>
-                    <td>261</td>
-                    <td>71%</td>
-                    <td><span class="badge bg-success">Disetujui</span></td>
-                    <td><a href="user_laporan_101.html">Rincian</a></td>
-                  </tr>
-                  <tr>
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+            
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Laporan <span>| Alex Saipul Kuncoro</span></h5>
+
+                  <table class="table table-bordered datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">id_laporan</th>
+                        <th scope="col">Ukuran Sampah</th>
+                        <th scope="col">Jumlah Sampah</th>
+                        <th scope="col">Harga Satuan</th>
+                        <th scope="col">Jumlah Harga</th>
+                      </tr>
+                    </thead>
+                   
                     
-                    <th scope="row"><a href="#">#2457</a></th>
-                    <td>Mutiara Indah 3</td>
-                    <td><a href="#" class="text-primary">Jl. Raya Pondok Cabe II No. 98, Kec. Pondok Cabe</a></td>
-                    <td>256</td>
-                    <td>198</td>
-                    <td>75%</td>
-                    <td><span class="badge bg-warning">Belum Disetujui</span></td>
-                    <td><a href="user_laporan_102.html">Rincian</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">#2457</a></th>
-                    <td>Casamala Residence </td>
-                    <td><a href="#" class="text-primary">Jl. Raya Grogol No. 6, Kec. Grogol</a></td>
-                    <td>452</td>
-                    <td>171</td>
-                    <td>11%</td>
-                    <td><span class="badge bg-danger">Belum Memenuhi</span></td>
-                    <td><a href="user_laporan_103.html">Rincian</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">#2644</a></th>
-                    <td>Angus Grady</td>
-                    <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
-                    <td>$67</td>
-                    <td><span class="badge bg-danger">Rejected</span></td>
-                    <td><a href="user_laporan_104.html">Rincian</a></td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">#2644</a></th>
-                    <td>Raheem Lehner</td>
-                    <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
-                    <td>$165</td>
-                    <td><span class="badge bg-success">Approved</span></td>
-                    <td><a href="user_laporan_105.html">Rincian</a></td>
-                  </tr>
-                </tbody>
-              </table>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#">221001001-1</a></th>
+                        <td>Medium</td>
+                        <td><a href="#" class="text-primary">3</a></td>
+                        <td><a href="#" class="text-primary">Rp750</a></td>
+                        <td><a href="#" class="text-primary">Rp2250</a></td>
+                      </tr>
 
-            </div>
+                      <tr>
+                        <th scope="row"><a href="#">221001001-1</a></th>
+                        <td>Small</td>
+                        <td><a href="#" class="text-primary">1</a></td>
+                        <td><a href="#" class="text-primary">Rp500</a></td>
+                        <td><a href="#" class="text-primary">Rp500</a></td>
+                      </tr>
 
-          </div>
-        </div><!-- End Recent Sales -->
+                      <tr>
+                        <th scope="row"><a href="#">221001001-1</a></th>
+                        <td>Extra Large</td>
+                        <td><a href="#" class="text-primary">1</a></td>
+                        <td><a href="#" class="text-primary">Rp2250</a></td>
+                        <td><a href="#" class="text-primary">Rp2250</a></td>
+                      </tr>
+                      
+                    <tr>
+                      <td scope="row"><b>TOTAL HARGA</b></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><b>Rp.5000</b></td>
+                    </tr>
+  
+                  </table>
 
-      <div class="card">
-        <div class="card-body">
+                  <button type="button"  class="btn btn-primary" onclick="showAlert()">ACC</button>
 
-          <h5 class="card-title">Default</h5>
-</section>
 
-</main><!-- End #main -->
+              </div>
+            </div><!-- End Recent Sales -->
+            import swal from 'sweetalert';
+
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+              function showAlert(){
+                swal({
+                   icon: "success",
+                   title: "Laporan User Disetujui!"
+                });
+              }
+            </script>
+        </div>
+
+ 
+    </section>
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
